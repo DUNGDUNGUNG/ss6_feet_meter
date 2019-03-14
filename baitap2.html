@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>chuyen doi feet meter</h2>
+<input type="number" id="input">
+<select  id="doi">
+    <option value="meter">meter</option>
+    <option value="feet">feet</option>
+</select>
+<input type="button" value="convert" onclick="convert()"><br/><br/>
+<input type="text" id="output">
+<select  id="nui">
+    <option value="meter">meter</option>
+    <option value="feet">feet</option>
+</select>
+<script>
+    function convert() {
+        if (doi.value=="meter" && nui.value=="feet"){output.value=parseFloat(input.value)*0.305}
+        if (doi.value==nui.value){output.value=parseFloat(input.value)}
+        if (doi.value=="feet"&& nui.value=="meter"){output.value=parseFloat(input.value)*3.279}
+
+    }
+</script>
+</body>
+</html>
